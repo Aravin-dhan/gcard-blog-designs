@@ -135,5 +135,50 @@
         <p>&copy; 2025 GCADR. All Rights Reserved.</p>
     </footer>
 
+    <div id="gemini-nav-switcher">
+        <a href="../index.html">Home</a>
+        <select onchange="window.open(this.value, '_self')">
+            <option value="">Switch Design...</option>
+            <option value="gcard_blog_design1_classic.html">1. Classic</option>
+            <option value="gcard_blog_design2_modern.html">2. Modern</option>
+            <option value="gcard_blog_design3_visual.html">3. Visual</option>
+            <option value="gcard_blog_design4_dark.html" selected>4. Dark</option>
+            <option value="gcard_blog_design5_academic.html">5. Academic</option>
+            <option value="gcard_blog_design6_brutalist.html">6. Brutalist</option>
+        </select>
+    </div>
+    <style>
+        #gemini-nav-switcher {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #2a2a2a;
+            border: 1px solid #444;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+            z-index: 9999;
+            font-family: sans-serif;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+        #gemini-nav-switcher:hover {
+            opacity: 1;
+        }
+        #gemini-nav-switcher a, #gemini-nav-switcher select {
+            display: inline-block;
+            margin: 0 5px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            border: 1px solid #555;
+            background-color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            color: #eee;
+        }
+        #gemini-nav-switcher a:hover {
+            background-color: #444;
+        }
+    </style>
 </body>
 </html>
