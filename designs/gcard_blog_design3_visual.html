@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCADR Blog - Visual Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400;600&display=swap');
+
+        body {
+            font-family: 'Lora', serif;
+            background-color: #fff;
+            color: #222;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar .logo {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #000;
+        }
+
+        .navbar .nav-links a {
+            font-family: 'Lora', sans-serif;
+            text-decoration: none;
+            color: #333;
+            margin-left: 2rem;
+            font-weight: 600;
+        }
+
+        .hero {
+            position: relative;
+            height: 60vh;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: #333 url('https://images.unsplash.com/photo-1599249591369-a1d74b88138b?q=80&w=2072&auto=format&fit=crop') center center/cover no-repeat;
+            background-blend-mode: overlay;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            padding: 2rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 5px;
+        }
+        
+        .hero .category {
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 1rem 0;
+            line-height: 1.2;
+        }
+
+        .hero .post-meta {
+            font-size: 1rem;
+            font-style: italic;
+        }
+        
+        .blog-layout {
+            padding-top: 4rem;
+        }
+
+        .posts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+
+        .post-preview {
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 2rem;
+        }
+        
+        .post-preview:last-child {
+            border-bottom: none;
+        }
+
+        .post-preview h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .post-preview h2 a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .post-preview .post-meta {
+            font-size: 0.9rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .post-preview .post-excerpt {
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 0;
+            margin-top: 4rem;
+            background-color: #111;
+            color: #aaa;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">GCADR</a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <p class="category">Featured Article</p>
+            <h1>The Doctrine of Separability in International Arbitration</h1>
+            <p class="post-meta">By John Doe | December 3, 2025</p>
+        </div>
+    </header>
+
+    <main class="container blog-layout">
+        <div class="posts-grid">
+            <article class="post-preview">
+                <h2><a href="#">Interim Measures in Aid of Arbitration: A Comparative Analysis</a></h2>
+                <p class="post-meta">By Jane Smith | November 28, 2025</p>
+                <p class="post-excerpt">Interim measures are crucial tools for preserving the status quo and ensuring the effectiveness of the final arbitral award. This article explores the different approaches taken by various jurisdictions...</p>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="#">Challenging Arbitral Awards: Grounds for Annulment</a></h2>
+                <p class="post-meta">By Alex Johnson | November 21, 2025</p>
+                <p class="post-excerpt">While finality is a key advantage of arbitration, arbitral awards are not entirely immune from challenge. This post examines the limited grounds on which an arbitral award can be set aside or annulled...</p>
+            </article>
+            
+            <article class="post-preview">
+                <h2><a href="#">The Rise of Emergency Arbitration</a></h2>
+                <p class="post-meta">By Emily White | November 15, 2025</p>
+                <p class="post-excerpt">In situations requiring urgent relief before an arbitral tribunal is constituted, emergency arbitration has emerged as a vital mechanism for parties seeking immediate protection of their rights and assets...</p>
+            </article>
+
+            <article class="post-preview">
+                <h2><a href="#">Third-Party Funding in Arbitration: Ethical Considerations</a></h2>
+                <p class="post-meta">By Michael Brown | November 8, 2025</p>
+                <p class="post-excerpt">Third-party funding is transforming the landscape of international arbitration, but it also raises important ethical questions for arbitrators and counsel, particularly regarding disclosure and conflicts of interest...</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GCADR | Global Centre for Arbitration & Dispute Resolution</p>
+    </footer>
+
+</body>
+</html>

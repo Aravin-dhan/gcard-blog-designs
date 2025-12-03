@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCADR Blog - Modern Design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: #7f8c8d;
+            margin-top: 0.5rem;
+        }
+
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .post-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+        
+        .card-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .post-card h2 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0 0 0.75rem 0;
+        }
+
+        .post-card h2 a {
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .post-meta {
+            font-size: 0.875rem;
+            color: #95a5a6;
+            margin-bottom: 1rem;
+        }
+
+        .post-excerpt {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #34495e;
+            flex-grow: 1;
+        }
+
+        .card-footer {
+            padding: 0 1.5rem 1.5rem;
+        }
+
+        .read-more {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            text-decoration: none;
+            color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        .read-more:hover {
+            color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>GCADR Blog</h1>
+        <p>Contemporary Perspectives on Arbitration & Dispute Resolution</p>
+    </header>
+
+    <main class="container">
+        <div class="blog-grid">
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">The Doctrine of Separability in International Arbitration</a></h2>
+                    <p class="post-meta">By John Doe | December 3, 2025</p>
+                    <p class="post-excerpt">The principle of separability, also known as the autonomy of the arbitration clause, is a foundational concept in arbitration law...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">Interim Measures in Aid of Arbitration</a></h2>
+                    <p class="post-meta">By Jane Smith | November 28, 2025</p>
+                    <p class="post-excerpt">Interim measures are crucial tools for preserving the status quo and ensuring the effectiveness of the final arbitral award...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">Challenging Arbitral Awards: Grounds for Annulment</a></h2>
+                    <p class="post-meta">By Alex Johnson | November 21, 2025</p>
+                    <p class="post-excerpt">While finality is a key advantage of arbitration, arbitral awards are not entirely immune from challenge. This post examines the limited grounds...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">The Rise of Emergency Arbitration</a></h2>
+                    <p class="post-meta">By Emily White | November 15, 2025</p>
+                    <p class="post-excerpt">In situations requiring urgent relief before an arbitral tribunal is constituted, emergency arbitration has emerged as a vital mechanism...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">Third-Party Funding in Arbitration: Ethical Considerations</a></h2>
+                    <p class="post-meta">By Michael Brown | November 8, 2025</p>
+                    <p class="post-excerpt">Third-party funding is transforming the landscape of international arbitration, but it also raises important ethical questions for arbitrators and counsel...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+            
+            <article class="post-card">
+                <div class="card-content">
+                    <h2><a href="#">Confidentiality vs. Transparency in Commercial Arbitration</a></h2>
+                    <p class="post-meta">By Sarah Green | November 1, 2025</p>
+                    <p class="post-excerpt">This article delves into the ongoing debate surrounding confidentiality and the increasing calls for greater transparency in commercial arbitration...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="read-more">Read Full Article</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GCADR | A Hub for Legal Scholarship</p>
+    </footer>
+
+</body>
+</html>
