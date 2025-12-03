@@ -136,7 +136,7 @@
     </footer>
 
     <div id="gemini-nav-switcher">
-        <a href="../index.html">Home</a>
+        <a href="../index.html" class="back-button">← Back to Home</a>
         <select onchange="window.open(this.value, '_self')">
             <option value="">Switch Design...</option>
             <option value="gcard_blog_design1_classic.html">1. Classic</option>
@@ -161,6 +161,8 @@
             font-family: sans-serif;
             opacity: 0.8;
             transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
         }
         #gemini-nav-switcher:hover {
             opacity: 1;
@@ -176,8 +178,12 @@
             text-decoration: none;
             color: #eee;
         }
-        #gemini-nav-switcher a:hover {
+        #gemini-nav-switcher .back-button {
+            font-weight: bold;
             background-color: #444;
+        }
+        #gemini-nav-switcher a:hover {
+            background-color: #555;
         }
     </style>
 </body>

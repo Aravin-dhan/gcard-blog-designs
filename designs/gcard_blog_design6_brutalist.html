@@ -159,7 +159,7 @@
     </div>
 
     <div id="gemini-nav-switcher">
-        <a href="../index.html">HOME</a>
+        <a href="../index.html" class="back-button">← BACK TO HOME</a>
         <select onchange="window.open(this.value, '_self')">
             <option value="">SWITCH_DESIGN</option>
             <option value="gcard_blog_design1_classic.html">1. CLASSIC</option>
@@ -180,6 +180,8 @@
             padding: 10px;
             font-family: 'Courier New', Courier, monospace;
             z-index: 9999;
+            display: flex;
+            align-items: center;
         }
         #gemini-nav-switcher a, #gemini-nav-switcher select {
             display: inline-block;
@@ -190,6 +192,10 @@
             font-size: 14px;
             text-decoration: none;
             color: #000;
+        }
+        #gemini-nav-switcher .back-button {
+            font-weight: bold;
+            background-color: #fff;
         }
         #gemini-nav-switcher a:hover {
             background: #000;
